@@ -1,0 +1,19 @@
+.background-container {
+  background-image: url('/src/assets/travel.png');
+  background-size: cover;
+  background-position: center;
+  width: 100%; /* Assurez-vous que le conteneur occupe toute la largeur */
+}
+
+.image-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  z-index: -1;
+}
+
+.custom-width {
+  width: 300px;
+}

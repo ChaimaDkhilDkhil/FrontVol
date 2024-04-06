@@ -1,0 +1,15 @@
+<!-- pilote-list.component.html -->
+
+<div *ngIf="pilotes.length > 0; else noPilotes">
+    <h2>Liste des Pilotes</h2>
+    <ul>
+      <li *ngFor="let pilote of pilotes">
+        {{ pilote.nompilote }} - {{ pilote.adresse }}
+      </li>
+    </ul>
+  </div>
+  
+  <ng-template #noPilotes>
+    <p>Aucun pilote disponible pour le moment.</p>
+  </ng-template>
+  

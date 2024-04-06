@@ -1,0 +1,44 @@
+<div class="background-container">
+  <div class="image-container">
+    <img [src]="Background" alt="background-image">
+  </div>
+  <div class="row align-items-center justify-content-center mb-5">
+    <img [src]="ImagePath" style="width: 350px; height: 107px;">
+    <div class="row gx-lg-5 align-items-center mb-5">
+      <div class="col-lg-6 mb-5 mb-lg-0" style="z-index: 10">
+        <p class="mb-4 opacity-70" style="color: hsl(218, 81%, 85%)">
+        </p>
+      </div>
+
+      <div class="col-lg-6 mb-5 mb-lg-0 position-relative" style="margin-top: 50px;">
+
+        <div class="card bg-glass">
+          <div class="card-body px-4 py-5 px-md-5 d-flex justify-content-center"> <!-- Center the content horizontally -->
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()" class="w-70">
+              <!-- Email input -->
+              <div class="form-outline mb-4">
+                <mat-form-field appearance="fill" class="custom-width">
+                  <mat-label>Email</mat-label>
+                  <input matInput formControlName="email" type="email" />
+                </mat-form-field>
+              </div>
+        
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <mat-form-field appearance="fill" class="custom-width">
+                  <mat-label>Password</mat-label>
+                  <input matInput formControlName="password" type="password" />
+                </mat-form-field>
+              </div>
+        
+              <!-- Submit button -->
+              <div class="w-full flex justify-center">
+                <button mat-raised-button color="primary" type="submit">Login</button>
+              </div>
+            </form>
+          </div>
+        </div>        
+      </div>
+    </div>
+  </div>
+</div>
